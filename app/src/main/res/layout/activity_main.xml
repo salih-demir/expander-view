@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.cascade.expanderview.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.cascade.expanderview.ExpanderView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentMarginEnabled="false"
+            app:expanderTitle="Expander View"
+            app:footerLineEnabled="true"
+            app:titleMarginEnabled="false">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary" />
+        </com.cascade.expanderview.ExpanderView>
+
+        <com.cascade.expanderview.ExpanderView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentMarginEnabled="true"
+            app:expanderTitle="Expander View With Margin"
+            app:footerLineEnabled="true"
+            app:titleMarginEnabled="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary" />
+        </com.cascade.expanderview.ExpanderView>
+
+        <com.cascade.expanderview.ExpanderView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentMarginEnabled="false"
+            app:expanderTitle="Expander View Without Footer"
+            app:footerLineEnabled="false"
+            app:titleMarginEnabled="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary" />
+        </com.cascade.expanderview.ExpanderView>
+
+        <com.cascade.expanderview.ExpanderView
+            android:id="@+id/ev_super_script"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentMarginEnabled="false"
+            app:footerLineEnabled="true"
+            app:titleMarginEnabled="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/colorPrimary" />
+        </com.cascade.expanderview.ExpanderView>
+
+        <com.cascade.expanderview.ExpanderView
+            android:id="@+id/ev_dynamic_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentMarginEnabled="false"
+            app:expanderTitle="Expander View With Dynamic Margin"
+            app:footerLineEnabled="true"
+            app:titleMarginEnabled="true">
+
+            <Button
+                android:id="@+id/b_change_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Content Margin" />
+        </com.cascade.expanderview.ExpanderView>
+
+        <com.cascade.expanderview.ExpanderView
+            android:id="@+id/ev_dynamic_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentMarginEnabled="false"
+            app:expanderTitle="Expander View With Dynamic Title"
+            app:footerLineEnabled="true"
+            app:titleMarginEnabled="true">
+
+            <Button
+                android:id="@+id/b_change_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Title" />
+        </com.cascade.expanderview.ExpanderView>
+
+        <com.cascade.expanderview.ExpanderView
+            android:id="@+id/ev_dynamic_visibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentMarginEnabled="false"
+            app:expanderTitle="Expander View With Dynamic Visibility"
+            app:footerLineEnabled="true"
+            app:titleMarginEnabled="true">
+
+            <Button
+                android:id="@+id/b_hide_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hide Me" />
+        </com.cascade.expanderview.ExpanderView>
+    </LinearLayout>
+</ScrollView>

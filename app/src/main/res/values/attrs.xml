@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpanderView">
+        <attr name="footerMarginEnabled" format="boolean"/>
+        <attr name="contentMarginEnabled" format="boolean"/>
+        <attr name="titleMarginEnabled" format="boolean"/>
+        <attr name="footerLineEnabled" format="boolean"/>
+        <attr name="expanderTitle" format="string"/>
+    </declare-styleable>
+</resources>
